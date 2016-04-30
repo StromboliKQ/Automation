@@ -7,6 +7,7 @@ require 'capybara/rspec'
 require 'capybara-screenshot/rspec'
 require 'selenium-webdriver'
 
+
 Capybara.run_server = false
 Capybara.app_host = "http://www.google.com"
 Capybara.default_driver = :selenium
