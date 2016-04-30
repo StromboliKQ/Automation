@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="RUBY_MODULE" version="4">
+  <component name="NewModuleRootManager">
+    <content url="file://$MODULE_DIR$" />
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" scope="PROVIDED" name="addressable (v2.4.0, rbenv: 2.3.0) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="builder (v3.2.2, rbenv: 2.3.0) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="bundler (v1.11.2, rbenv: 2.3.0) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="capybara (v2.7.0, rbenv: 2.3.0) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="capybara-screenshot (v1.0.12, rbenv: 2.3.0) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="childprocess (v0.5.9, rbenv: 2.3.0) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="cucumber (v2.3.3, rbenv: 2.3.0) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="cucumber-core (v1.4.0, rbenv: 2.3.0) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="cucumber-wire (v0.0.1, rbenv: 2.3.0) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="diff-lcs (v1.2.5, rbenv: 2.3.0) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="ffi (v1.9.10, rbenv: 2.3.0) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="gherkin (v3.2.0, rbenv: 2.3.0) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="launchy (v2.4.3, rbenv: 2.3.0) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="mime-types (v3.0, rbenv: 2.3.0) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="mime-types-data (v3.2016.0221, rbenv: 2.3.0) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="mini_portile2 (v2.0.0, rbenv: 2.3.0) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="multi_json (v1.11.3, rbenv: 2.3.0) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="multi_test (v0.1.2, rbenv: 2.3.0) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="rack (v1.6.4, rbenv: 2.3.0) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="rack-test (v0.6.3, rbenv: 2.3.0) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="rspec (v3.4.0, rbenv: 2.3.0) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="rspec-core (v3.4.4, rbenv: 2.3.0) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="rspec-expectations (v3.4.0, rbenv: 2.3.0) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="rspec-mocks (v3.4.1, rbenv: 2.3.0) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="rspec-support (v3.4.1, rbenv: 2.3.0) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="rubyzip (v1.2.0, rbenv: 2.3.0) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="selenium-webdriver (v2.53.0, rbenv: 2.3.0) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="websocket (v1.2.3, rbenv: 2.3.0) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="xpath (v2.0.0, rbenv: 2.3.0) [gem]" level="application" />
+  </component>
+</module>
