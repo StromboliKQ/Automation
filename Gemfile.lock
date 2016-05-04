@@ -1,9 +1,9 @@
 GEM
   remote: https://rubygems.org/
   specs:
-    addressable (2.4.0)
+    addressable (2.3.8)
     builder (3.2.2)
-    capybara (2.7.0)
+    capybara (2.7.1)
       addressable
       mime-types (>= 1.16)
       nokogiri (>= 1.3.3)
@@ -23,25 +23,42 @@ GEM
       gherkin (~> 3.2.0)
       multi_json (>= 1.7.5, < 2.0)
       multi_test (>= 0.1.2)
+    cucumber-api (0.3)
+      cucumber (~> 2.0)
+      json-schema (~> 2.5)
+      jsonpath (~> 0.5)
+      rest-client (~> 1.8)
     cucumber-core (1.4.0)
       gherkin (~> 3.2.0)
     cucumber-wire (0.0.1)
     diff-lcs (1.2.5)
+    domain_name (0.5.20160310)
+      unf (>= 0.0.5, < 1.0.0)
     ffi (1.9.10)
     gherkin (3.2.0)
+    http-cookie (1.0.2)
+      domain_name (~> 0.5)
+    json-schema (2.6.1)
+      addressable (~> 2.3.8)
+    jsonpath (0.5.8)
+      multi_json
     launchy (2.4.3)
       addressable (~> 2.3)
-    mime-types (3.0)
-      mime-types-data (~> 3.2015)
-    mime-types-data (3.2016.0221)
+    mime-types (2.99.1)
     mini_portile2 (2.0.0)
-    multi_json (1.11.3)
+    multi_json (1.12.0)
     multi_test (0.1.2)
+    netrc (0.11.0)
     nokogiri (1.6.7.2)
       mini_portile2 (~> 2.0.0.rc2)
     rack (1.6.4)
     rack-test (0.6.3)
       rack (>= 1.0)
+    rake (11.1.2)
+    rest-client (1.8.0)
+      http-cookie (>= 1.0.2, < 2.0)
+      mime-types (>= 1.16, < 3.0)
+      netrc (~> 0.7)
     rspec (3.4.0)
       rspec-core (~> 3.4.0)
       rspec-expectations (~> 3.4.0)
@@ -60,6 +77,9 @@ GEM
       childprocess (~> 0.5)
       rubyzip (~> 1.0)
       websocket (~> 1.0)
+    unf (0.1.4)
+      unf_ext
+    unf_ext (0.0.7.2)
     websocket (1.2.3)
     xpath (2.0.0)
       nokogiri (~> 1.3)
@@ -71,8 +91,10 @@ DEPENDENCIES
   capybara
   capybara-screenshot
   cucumber
+  cucumber-api
+  rake
   rspec
   selenium-webdriver
 
 BUNDLED WITH
-   1.11.2
+   1.12.1

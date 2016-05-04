@@ -1,0 +1,119 @@
+[
+  {
+    "uri": "features/test.feature",
+    "id": "cucumber-setup",
+    "keyword": "Feature",
+    "name": "Cucumber setup",
+    "description": "\tAs a QA Engineer\n\tI would like to be able to create automated tests\n\tSo that I do not have to click buttons manually",
+    "line": 2,
+    "tags": [
+      {
+        "name": "@features",
+        "line": 1
+      }
+    ],
+    "elements": [
+      {
+        "id": "cucumber-setup;i-search-rakuten-usa",
+        "keyword": "Scenario",
+        "name": "I search Rakuten USA",
+        "description": "",
+        "line": 8,
+        "type": "scenario",
+        "tags": [
+          {
+            "name": "@features",
+            "line": 1
+          }
+        ],
+        "before": [
+          {
+            "match": {
+              "location": "capybara-2.7.1/lib/capybara/cucumber.rb:12"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 18000
+            }
+          },
+          {
+            "match": {
+              "location": "capybara-2.7.1/lib/capybara/cucumber.rb:20"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 50000
+            }
+          },
+          {
+            "match": {
+              "location": "capybara-screenshot-1.0.12/lib/capybara-screenshot/cucumber.rb:4"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 7000
+            }
+          }
+        ],
+        "steps": [
+          {
+            "keyword": "Given ",
+            "name": "I am on the Rakuten USA website",
+            "line": 9,
+            "match": {
+              "location": "features/step_definitions/test_steps.rb:1"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 9524070000
+            }
+          },
+          {
+            "keyword": "When ",
+            "name": "I search for \"umbrella\"",
+            "line": 10,
+            "match": {
+              "location": "features/step_definitions/test_steps.rb:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1065781000
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "I should be presented with \"umbrella\"",
+            "line": 11,
+            "match": {
+              "location": "features/step_definitions/test_steps.rb:11"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 472925000
+            }
+          }
+        ],
+        "after": [
+          {
+            "match": {
+              "location": "capybara-screenshot-1.0.12/lib/capybara-screenshot/cucumber.rb:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 50000
+            }
+          },
+          {
+            "match": {
+              "location": "capybara-2.7.1/lib/capybara/cucumber.rb:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 457295000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

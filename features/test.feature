@@ -1,3 +1,4 @@
+@features
 Feature: Cucumber setup
 	As a QA Engineer
 	I would like to be able to create automated tests
