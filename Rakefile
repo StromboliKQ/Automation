@@ -1,8 +1,15 @@
+require 'cucumber'
 require 'cucumber/rake/task'
 
 
-Cucumber::Rake::Task.new(:all, 'Runs the whole test Suite') do |t|
-  	t.cucumber_opts = "features/*
-             --format html --out=results/all-report.html
-					   --format pretty --no-source"
+Cucumber::Rake::Task.new(:features) do |t|
+ # t.profile = ‘ci’
+  t.cucumber_opts = "features/*
+              --format pretty --no-source
+              --format json -o cucumber.json"
 end
+
+task :default => :features
+
+
+# --format html --out=results/all-report.html
