@@ -1,0 +1,16 @@
+before_script:
+  - export DISPLAY=:99.0
+  - sh -e /etc/init.d/xvfb start --server-args="-screen 0 1024x768x24"
+language: ruby
+rvm:
+  - "2.0.0"
+env:
+  global:
+    - CI_NODE_TOTAL=4
+  matrix:
+    - CI_NODE_INDEX=0
+    - CI_NODE_INDEX=1
+    - CI_NODE_INDEX=2
+    - CI_NODE_INDEX=3
+script:
+- "bundle exec rake features"
