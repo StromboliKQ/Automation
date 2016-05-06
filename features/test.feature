@@ -7,5 +7,5 @@ Feature: Cucumber setup
 
 	Scenario: I search Rakuten USA
 		Given I am on the Rakuten USA website
-		When I search for "umbrella"
-		Then I should be presented with "umbrella"
+		When I search for "hats"
+		Then I should be presented with "hats"
