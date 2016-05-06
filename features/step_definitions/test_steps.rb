@@ -3,7 +3,7 @@ Given(/^I am on the Rakuten USA website$/) do
 end
 
 When(/^I search for "([^"]*)"$/) do |search_text|
-  fill_in('qu', :with => search_text) do
+  fill_in('qu', :with => search_text, visible: false) do
   	click('searchSubmit')
   end
 end
