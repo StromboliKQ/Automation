@@ -5,27 +5,15 @@
     "keyword": "Feature",
     "name": "Cucumber setup",
     "description": "\tAs a QA Engineer\n\tI would like to be able to create automated tests\n\tSo that I do not have to click buttons manually",
-    "line": 2,
-    "tags": [
-      {
-        "name": "@features",
-        "line": 1
-      }
-    ],
+    "line": 1,
     "elements": [
       {
         "id": "cucumber-setup;i-search-rakuten-usa",
         "keyword": "Scenario",
         "name": "I search Rakuten USA",
         "description": "",
-        "line": 8,
+        "line": 7,
         "type": "scenario",
-        "tags": [
-          {
-            "name": "@features",
-            "line": 1
-          }
-        ],
         "before": [
           {
             "match": {
@@ -42,7 +30,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 21000
+              "duration": 10000
             }
           },
           {
@@ -51,7 +39,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 7000
+              "duration": 6000
             }
           }
         ],
@@ -59,37 +47,37 @@
           {
             "keyword": "Given ",
             "name": "I am on the Rakuten USA website",
-            "line": 9,
+            "line": 8,
             "match": {
               "location": "features/step_definitions/test_steps.rb:1"
             },
             "result": {
               "status": "passed",
-              "duration": 7057120000
+              "duration": 7402369000
             }
           },
           {
             "keyword": "When ",
             "name": "I search for \"umbrella\"",
-            "line": 10,
+            "line": 9,
             "match": {
               "location": "features/step_definitions/test_steps.rb:5"
             },
             "result": {
               "status": "passed",
-              "duration": 1224962000
+              "duration": 1840036000
             }
           },
           {
             "keyword": "Then ",
             "name": "I should be presented with \"umbrella\"",
-            "line": 11,
+            "line": 10,
             "match": {
               "location": "features/step_definitions/test_steps.rb:11"
             },
             "result": {
               "status": "passed",
-              "duration": 385291000
+              "duration": 318374000
             }
           }
         ],
@@ -100,7 +88,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 28000
+              "duration": 50000
             }
           },
           {
@@ -109,7 +97,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 379880000
+              "duration": 456373000
             }
           }
         ]
