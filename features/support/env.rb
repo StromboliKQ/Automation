@@ -8,7 +8,7 @@ require 'capybara-screenshot/rspec'
 require 'selenium-webdriver'
 #require 'headless'
 
-Capybara.default_wait_time = 60
+Capybara.default_max_wait_time = 60
 
 Capybara.run_server = false
 
