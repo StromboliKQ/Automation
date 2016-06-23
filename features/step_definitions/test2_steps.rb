@@ -1,26 +1,26 @@
-When (/I search for something$/) do ENV['FOO']
-  fill_in('qu', :with => ENV['FOO'], visible: false)
+When (/I search for something$/) do ENV['SEARCH_FOR']
+  fill_in('qu', :with => ENV['SEARCH_FOR'], visible: false)
 end
 
 Then(/^I search$/) do
   click_on("searchSubmit")
 end
 
-Then (/I should see the correct results$/) do ENV['FOO']
- expect(page).to have_title ENV['FOO']
+Then (/I should see the correct results$/) do ENV['SEARCH_FOR']
+ expect(page).to have_title ENV['SEARCH_FOR']
 end
 
 
 #When (/I search for something$/) do
-#  fill_in('qu', :with => ENV['FOO'], visible: false) do
+#  fill_in('qu', :with => ENV['SEARCH'], visible: false) do
 #    find_field('raksearch').native.send_key(:enter)
 #  end
 #end
 
 #Then (/I should see the correct results$/) do
-#  expect(find_link(*ENV['FOO'])).to have_content(ENV['FOO'])
+#  expect(find_link(*ENV['SEARCH'])).to have_content(ENV['SEARCH'])
 #end
 
  # within(:css, "#search-terms") do
- # expect(find_link(*ENV['FOO'])).to have_content(ENV['FOO'])
+ # expect(find_link(*ENV['SEARCH'])).to have_content(ENV['SEARCH'])
  #end
