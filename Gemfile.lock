@@ -48,6 +48,9 @@ GEM
       rspec (>= 2.0, < 4.0)
     jsonpath (0.5.8)
       multi_json
+    knapsack (1.11.1)
+      rake
+      timecop (>= 0.1.0)
     launchy (2.4.3)
       addressable (~> 2.3)
     mattscilipoti-rdialog (0.6.1)
@@ -89,6 +92,7 @@ GEM
       childprocess (~> 0.5)
       rubyzip (~> 1.0)
       websocket (~> 1.0)
+    timecop (0.8.1)
     unf (0.1.4)
       unf_ext
     unf_ext (0.0.7.2)
@@ -107,6 +111,7 @@ DEPENDENCIES
   cucumber-api
   cucumber-farmer
   json_spec
+  knapsack
   mime-types (~> 1.16)
   mocha
   rake
