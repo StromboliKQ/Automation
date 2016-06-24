@@ -13,3 +13,5 @@ task :default => :features
 
 
 # --format html --out=results/all-report.html
+
+Knapsack.load_tasks if defined?(Knapsack)
