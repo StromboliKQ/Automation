@@ -10,7 +10,7 @@ require 'farmer/step_definitions'
 require 'json_spec/cucumber'
 require 'chronic'
 require 'cucumber-api'
-require 'mime-types', '~> 1.16'
+#require 'mime-types', '~> 1.16'
 
 def setup
   @driver = Selenium::WebDriver.for :firefox
