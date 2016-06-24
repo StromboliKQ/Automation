@@ -13,4 +13,5 @@ env:
     - CI_NODE_INDEX=2
     - CI_NODE_INDEX=3
 script:
+- "gem install cucumber"
 - "bundle exec rake features"
