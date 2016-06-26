@@ -117,6 +117,7 @@ DEPENDENCIES
   rake
   rspec
   selenium-webdriver
+  timecop
 
 BUNDLED WITH
    1.12.5

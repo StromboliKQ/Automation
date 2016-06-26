@@ -16,3 +16,4 @@ gem 'mime-types', '~> 1.16'
 group :test, :development do
   gem 'knapsack'
 end
+gem 'timecop'
