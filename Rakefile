@@ -20,6 +20,6 @@ task :default => :features
 task :default => :quick
 
 
- --format html --out=results/all-report.html
+# --format html --out=results/all-report.html
 
 #Knapsack.load_tasks if defined?(Knapsack)
