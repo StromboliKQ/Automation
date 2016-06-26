@@ -10,6 +10,7 @@ Cucumber::Rake::Task.new(:features) do |t|
 end
 
 task :default => :features
+task :default => :api
 
 
 # --format html --out=results/all-report.html
