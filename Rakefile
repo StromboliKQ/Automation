@@ -10,9 +10,9 @@ Cucumber::Rake::Task.new(:features) do |t|
 end
 
 task :default => :features
-task :default => :api
+#task :default => :api
 
 
 # --format html --out=results/all-report.html
 
-Knapsack.load_tasks if defined?(Knapsack)
+#Knapsack.load_tasks if defined?(Knapsack)
