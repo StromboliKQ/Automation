@@ -22,4 +22,4 @@ task :default => :quick
 
 # --format html --out=results/all-report.html
 
-#Knapsack.load_tasks if defined?(Knapsack)
+Knapsack.load_tasks if defined?(Knapsack)
