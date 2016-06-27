@@ -5,7 +5,7 @@ before_script:
 language: ruby
 rvm:
   - "2.0.0"
-script: "bundle exec rake knapsack:cucumber"
+script: "bundle exec rake quick"
 env:
   global:
     - CI_NODE_TOTAL=2
