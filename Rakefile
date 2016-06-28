@@ -13,7 +13,7 @@ Cucumber::Rake::Task.new(:quick) do |t|
  # t.profile = ‘ci’
   t.cucumber_opts = "features/tests/quicktest.feature
               --format pretty --no-source
-              --format json -o cucumber.json"
+              --format json -o cucumber.json --guess"
 end
 
 task :default => :features
