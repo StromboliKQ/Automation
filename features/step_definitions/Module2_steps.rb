@@ -22,5 +22,5 @@ end
 
 Then(/^I should see (?:an|a) "([^"]*)" message$/) do |msg|
     expect(page).to have_content msg
-  sleep 3
+  sleep 30
 end
