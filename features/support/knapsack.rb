@@ -1,5 +1,5 @@
-require 'knapsack'
+#require 'knapsack'
 
 # CUSTOM_CONFIG_GOES_HERE
 
-Knapsack::Adapters::CucumberAdapter.bind
+#Knapsack::Adapters::CucumberAdapter.bind
