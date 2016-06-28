@@ -10,6 +10,7 @@ require 'farmer/step_definitions'
 require 'json_spec/cucumber'
 require 'chronic'
 require 'cucumber-api'
+require 'cucumber/api_steps'
 #require 'mime-types', '~> 1.16'
 
 def setup
@@ -57,7 +58,13 @@ Capybara.register_driver :selenium do |app|
 	Capybara::Selenium::Driver.new(app, :browser => browser)
 end
 
+Capybara.save_path = "features/screen-shots"
 
+def last_json
+  page.source
+end
+
+#Capybara.save_and_open_page_path = "features/Screenshots/"
 
 #Before('@selenium') do
 #  if ENV["SELENIUM_HEADLESS"] == 'true'

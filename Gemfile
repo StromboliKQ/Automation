@@ -17,3 +17,4 @@ group :test, :development do
   gem 'knapsack'
 end
 gem 'timecop'
+gem 'cucumber-api-steps', :require => false
