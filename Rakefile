@@ -18,7 +18,7 @@ end
 
 task :default => :features
 task :default => :quick
-task :default => :files, :files2
+task :default => :files
 
 
 # --format html --out=results/all-report.html
