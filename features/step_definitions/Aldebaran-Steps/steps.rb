@@ -50,3 +50,11 @@ response = Unirest.post "http://localhost:8080/reserve", auth:{ :Authorization =
 
 
 end
+
+
+# ASserting response and JSON Steps #
+#===================================#
+
+Then(/^the response code should be "([^"]*)"$/) do |status_code|
+    raise %/Expect #{status_code} but was #{@response.code}/ if @response.code != status_code.to_i
+end
