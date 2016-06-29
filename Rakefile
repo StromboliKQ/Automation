@@ -25,9 +25,13 @@ end
 
 Cucumber::Rake::Task.new(:post) do |t|
  # t.profile = ‘ci’
-  t.cucumber_opts = "features/tests/quicktest.feature
-              --format pretty --no-source
-              --format json -o cucumber.json --guess"
+  t.cucumber_opts = "features/tests/reservation.feature
+  --format pretty
+  --no-source
+  --format json
+  -o cucumber.json
+  --guess
+  --tags @post"
 end
 
 task :default => :features
