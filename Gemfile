@@ -15,7 +15,7 @@ gem 'rspec'
 gem 'rake'
 
 #gem 'rack-test'
-#gem 'rack-client'
+gem 'rack-client'
 
 gem 'json_spec'
 
@@ -35,5 +35,5 @@ gem 'timecop'
 gem 'unirest'
 gem 'httparty'
 
-#gem 'rest-client'
+gem 'rest-client'
 
