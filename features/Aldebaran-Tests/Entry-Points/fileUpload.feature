@@ -7,8 +7,9 @@ Background:
 
          Given I am on the PMS API RESERVATION FORM
 
+         @file1
          Scenario: User uploads blank file
-             Given I send and accept JSON
+             Given I send form-data and accept JSON
              Then I set the field name to "test name"
              And I select the 'file_blank_file' file
              And I press the upload button
@@ -21,5 +22,12 @@ Background:
                 """
                 {"tweet":"Hello World!","lat":"42.848282", "lng":"74.634933"}
                 """
+            @json
+            Scenario: As a patient I want to attach an image to a message
+            Given the user is authorized
+            When I send a multipart POST request to "http://localhost:8080/reserve" with:
+             | Name                | Content     | Filename      | Type       |
+             | message[body]       | lorem ipsum |               |            |
+             | message[attachment] |             | face-itch.jpg | image/jpeg |
 
 

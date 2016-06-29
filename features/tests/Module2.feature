@@ -26,7 +26,6 @@ Feature: Module 2 Test Example
      Scenario: Visit Reservation API Upload form and click button
          Given the local app is running
          And I fill text in Name bar
-
          And I pick a file
          And I press the upload button
          Then I should see an "error" message

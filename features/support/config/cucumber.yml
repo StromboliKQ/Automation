@@ -1,1 +1,3 @@
 verbose     : cucumber_api_verbose=true
+
+deafault: --format pretty --expand -g -b
