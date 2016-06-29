@@ -16,6 +16,20 @@ Cucumber::Rake::Task.new(:quick) do |t|
               --format json -o cucumber.json --guess"
 end
 
+Cucumber::Rake::Task.new(:files) do |t|
+ # t.profile = ‘ci’
+  t.cucumber_opts = "features/tests/quicktest.feature
+              --format pretty --no-source
+              --format json -o cucumber.json --guess"
+end
+
+Cucumber::Rake::Task.new(:post) do |t|
+ # t.profile = ‘ci’
+  t.cucumber_opts = "features/tests/quicktest.feature
+              --format pretty --no-source
+              --format json -o cucumber.json --guess"
+end
+
 task :default => :features
 task :default => :quick
 task :default => :files
