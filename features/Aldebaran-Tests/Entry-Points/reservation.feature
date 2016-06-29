@@ -104,11 +104,7 @@ Feature:
                          ]
                        }
                        """
-                  Then the response status should be "200"
-                  And the JSON response should be:
-                     """
-                     {"status":"RESERVED","transactionId":"936485fc-99ac-4be7-9882-5209f6b50cfa"}
-                     """
+
 
            @post2
            Scenario: <enter scenario title>
