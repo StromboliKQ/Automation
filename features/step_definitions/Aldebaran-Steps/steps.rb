@@ -43,10 +43,10 @@ Then(/^I set the field name to "([^"]*)"$/) do |name|
 end
 
 # Send the POST request
-Given(/^I POST file and:$/) do |body|
+Given(/^I POST file along with:$/) do |body|
 response = Unirest.post "http://localhost:8080/reserve", auth:{ :Authorization => "Basic a29ib193ZWIwMTpzZWNfa29ib193ZWIwMQ==" },
                         headers:{ "Accept" => "application/json" },
-                        parameters:{ :metadata => 12, :file => File.new("/Users/britian.hammond/code/Automation/features/upload-files/file_blank_file.txt", 'rb') }
+                        parameters:{ :body => body , :file => File.new("/Users/britian.hammond/code/Automation/features/upload-files/file_blank_file.txt", 'rb') }
 
 
 end
