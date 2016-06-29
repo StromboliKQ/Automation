@@ -2,7 +2,7 @@ require 'cucumber-api/response'
 require 'rest-client'
 require 'json-schema'
 
-#### Reservation Feature ####
+#### Reservation API ####
 
 # Background Steps #
 #===================#
