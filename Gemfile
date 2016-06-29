@@ -1,5 +1,6 @@
 source 'https://rubygems.org'
 gem 'cucumber'
+gem 'json', '1.6.3'
 gem 'cucumber-api'
 gem 'capybara'
 gem 'capybara-screenshot', :group => :test
@@ -18,7 +19,6 @@ group :test, :development do
 end
 gem 'timecop'
 gem 'cucumber-api-steps', :require => false
-gem 'json', '1.6.3'
 gem 'unirest'
 gem 'httparty'
 gem 'rack-test'
