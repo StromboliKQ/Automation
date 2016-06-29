@@ -33,6 +33,7 @@ end
 gem 'timecop'
 
 gem 'unirest'
-#gem 'httparty'
+gem 'httparty'
 
 #gem 'rest-client'
+
