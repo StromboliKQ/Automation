@@ -5,27 +5,36 @@ require 'cucumber/rake/task'
 Cucumber::Rake::Task.new(:features) do |t|
  # t.profile = ‘ci’
   t.cucumber_opts = "features/*
-              --format pretty --no-source
-              --format json -o cucumber.json"
+  --format pretty
+  --no-source
+  --format json
+  -o cucumber.json
+  --guess"
 end
 
 Cucumber::Rake::Task.new(:quick) do |t|
  # t.profile = ‘ci’
   t.cucumber_opts = "features/tests/quicktest.feature
-              --format pretty --no-source
-              --format json -o cucumber.json --guess"
+  --format pretty
+  --no-source
+  --format json
+  -o cucumber.json
+  --guess"
 end
 
 Cucumber::Rake::Task.new(:files) do |t|
  # t.profile = ‘ci’
   t.cucumber_opts = "features/tests/quicktest.feature
-              --format pretty --no-source
-              --format json -o cucumber.json --guess"
+  --format pretty
+  --no-source
+  --format json
+  -o cucumber.json
+  --guess"
 end
 
 Cucumber::Rake::Task.new(:post) do |t|
  # t.profile = ‘ci’
-  t.cucumber_opts = "features/tests/reservation.feature
+  t.cucumber_opts = "
   --format pretty
   --no-source
   --format json
