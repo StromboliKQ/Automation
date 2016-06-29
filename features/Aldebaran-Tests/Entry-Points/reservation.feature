@@ -114,6 +114,4 @@ Feature:
            Scenario: <enter scenario title>
                   Given I send and accept JSON
                   When I send a POST request to "http://localhost/reserve" with the following:
-                  """
-                  123
-                  """
+

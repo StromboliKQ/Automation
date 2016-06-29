@@ -127,7 +127,6 @@ DEPENDENCIES
   cucumber-api-steps
   cucumber-farmer
   httparty
-  json (= 1.6.3)
   json_spec
   knapsack
   mime-types (~> 1.16)
