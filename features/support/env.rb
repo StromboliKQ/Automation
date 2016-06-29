@@ -1,5 +1,5 @@
 puts "Welcome to the TEST SUITE!"
-
+require 'httparty'
 require 'capybara'
 require 'capybara/cucumber'
 require 'capybara-screenshot/cucumber'
@@ -12,6 +12,18 @@ require 'chronic'
 require 'cucumber-api'
 require 'cucumber/api_steps'
 #require 'mime-types', '~> 1.16'
+require 'unirest'
+require 'rack/client'
+
+module CapybaraApp
+  def app; Capybara.app; end
+end
+World(CapybaraApp)
+World(Rack::Test::Methods)
+
+client = Rack::Client.new('http://localhost:8080') do
+  run Rack::Client::Handler::NetHTTP
+end
 
 def setup
   @driver = Selenium::WebDriver.for :firefox
@@ -63,6 +75,8 @@ Capybara.save_path = "features/screen-shots"
 def last_json
   page.source
 end
+
+#include Rack::Test::Methods
 
 #Capybara.save_and_open_page_path = "features/Screenshots/"
 

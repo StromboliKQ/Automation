@@ -19,7 +19,7 @@ end
 task :default => :features
 task :default => :quick
 task :default => :files
-
+task :default => :post
 
 # --format html --out=results/all-report.html
 

@@ -1,54 +1,50 @@
-# File Upload Steps #
-#===================##
+require 'cucumber-api/response'
+require 'rest-client'
+require 'json-schema'
 
+#### Reservation Feature ####
+
+# Background Steps #
+#===================#
+
+# Go to App
+Given(/^the app is running$/) do
+  visit 'http://localhost:8080'
+end
+
+# Go to App
 Given(/^I am on the PMS API RESERVATION FORM$/) do
   visit 'http://localhost:8080/'
 end
 
+# Set headers
+Given(/^I send data and take JSON$/) do
+  header 'Accept', 'application/json'
+  header 'Content-Type', 'multipart/form-data; boundary=----WebKitFormBoundary7MA4YWxkTrZu0gW'
+end
+
+# Set headers
+Given(/^I am authenticated$/) do
+  header 'Authorization', 'Basic a29ib193ZWIwMTpzZWNfa29ib193ZWIwMQ=='
+end
+
+# Set headers
+Given(/^the user is authorized$/) do
+  header 'Authorization', 'Basic a29ib193ZWIwMTpzZWNfa29ib193ZWIwMQ=='
+end
+
+
+# File Upload Steps #
+#===================#
+
+# Set the upload form name field
 Then(/^I set the field name to "([^"]*)"$/) do |name|
   fill_in('name', :with => name)
 end
 
-Then(/^I select the 'file_blank_file' file$/) do
-  attach_file('file', File.absolute_path('./features/upload-files/file_blank_file.txt'))
+# Send the POST request
+Given(/^I POST file and:$/) do |body|
+response = Unirest.post "http://localhost:8080/reserve",
+                        headers:{ "Accept" => "application/json" },
+                        parameters:{ :metadata => 12, :file => File.new("/Users/britian.hammond/code/Automation/features/upload-files/file_blank_file.txt", 'rb') }
 end
-
-Then(/^I select the 'file_copy2' file$/) do
-  attach_file('file', File.absolute_path('./features/upload-files/file_copy2.txt'))
-end
-
-Then(/^I select the 'ffile_invalid_file_format' file$/) do
-  attach_file('file', File.absolute_path('./features/upload-files/ffile_invalid_file_format.txt'))
-end
-
-Then(/^I select the 'file_invalid_request_Key' file$/) do
-  attach_file('file', File.absolute_path('./features/upload-files/file_invalid_request_Key.txt'))
-end
-
-Then(/^I select the 'file_member_id_voilations' file$/) do
-  attach_file('file', File.absolute_path('./features/upload-files/file_member_id_voilations.txt'))
-end
-
-Then(/^I select the 'file_negative_points' file$/) do
-  attach_file('file', File.absolute_path('./features/upload-files/file_negative_points.txt'))
-end
-
-Then(/^I select the 'file_points_exceeding_max' file$/) do
-  attach_file('file', File.absolute_path('./features/upload-files/file_points_exceeding_max.txt'))
-end
-
-Then(/^I select the 'file_string_points' file$/) do
-  attach_file('file', File.absolute_path('./features/upload-files/file_string_points.txt'))
-end
-
-Then(/^I select the 'file-all-voilations' file$/) do
-  attach_file('file', File.absolute_path('./features/upload-files/file-all-voilations.txt'))
-end
-
-Then(/^i wait$/) do
-  sleep 1
-end
-
-#Then(/^I click the Upload buton$/) do
-#   find(:css, 'input[value="Upload"]').click
-#end
