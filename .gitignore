@@ -10,4 +10,5 @@ tmp/**/*
 
 # Folders #
 ###########
-Features/Projects/*
+features/projects/*
+features/step_definitions/other-steps/*
