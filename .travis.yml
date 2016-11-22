@@ -5,7 +5,7 @@ before_script:
 language: ruby
 rvm:
   - "2.0.0"
-script: "bundle exec rake post"
+script: "bundle exec rake play"
 env:
   global:
     - CI_NODE_TOTAL=2
