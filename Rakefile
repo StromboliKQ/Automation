@@ -44,9 +44,9 @@ Cucumber::Rake::Task.new(:post) do |t|
 end
 
 task :default => :features
-task :default => :quick
-task :default => :files
-task :default => :post
+#task :default => :quick
+#task :default => :files
+#task :default => :post
 
 # --format html --out=results/all-report.html
 
