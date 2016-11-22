@@ -10,7 +10,7 @@ Given(/^I go to "([^"]*)" soundcloud page$/) do |user|
 end
 
 Given(/^I play a song$/) do
-  click_on '/html/body/div[1]/div[2]/div/div[4]/div[1]/div/div[2]/div/div[2]/ul/li[1]/div/div/div/div[2]/div[1]/div/div/div[1]/button'
+  first(:button, Play).click
 end
 
 Then(/^I wait$/) do
