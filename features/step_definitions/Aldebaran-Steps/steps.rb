@@ -6,8 +6,8 @@ require 'json-schema'
 #### SoundCloud ####
 
 Given(/^I go to "([^"]*)" soundcloud page$/) do |user|
-  visit ('https://soundcloud.com/konquestnow')
-  expect(page).to have_text "konquestnow"
+  visit ('https://soundcloud.com/' + user)
+  expect(page).to have_text "KonQuest Now"
 end
 
 Given(/^I play a song$/) do
