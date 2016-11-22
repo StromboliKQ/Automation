@@ -10,7 +10,7 @@ Given(/^I go to "([^"]*)" soundcloud page$/) do |user|
 end
 
 Given(/^I play a song$/) do
-  click 'Play'
+  click_on 'Play'
   sleep(10)
 end
 
