@@ -14,7 +14,7 @@ Given(/^I play a song$/) do
 end
 
 Then(/^I wait$/) do
-  sleep(10)
+  sleep(240)
 end  
 
 
