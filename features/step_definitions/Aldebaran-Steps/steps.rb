@@ -6,8 +6,9 @@ require 'json-schema'
 #### SoundCloud ####
 
 Given(/^I go to "([^"]*)" soundcloud page$/) do |user|
-  visit 'https://soundcloud.com/{user}'
+  visit ('https://soundcloud.com/'+user)
 end
+
 Given(/^I play a song$/) do
   pending # Write code here that turns the phrase above into concrete actions
 end
