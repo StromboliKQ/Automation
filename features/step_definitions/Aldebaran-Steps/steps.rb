@@ -6,11 +6,11 @@ require 'json-schema'
 #### SoundCloud ####
 
 Given(/^I go to "([^"]*)" soundcloud page$/) do |user|
-  visit ('https://soundcloud.com/'+user)
+  visit ('https://soundcloud.com/' + user)
 end
 
 Given(/^I play a song$/) do
-  find('Play', match: :first).click
+  find('.sc-button.sc-button-xlarge', match: :first).click
 end
 
 Then(/^I wait$/) do
