@@ -10,7 +10,8 @@ Given(/^I go to "([^"]*)" soundcloud page$/) do |user|
 end
 
 Given(/^I play a song$/) do
-  pending # Write code here that turns the phrase above into concrete actions
+  click 'Play'
+  sleep(10)
 end
 
 
