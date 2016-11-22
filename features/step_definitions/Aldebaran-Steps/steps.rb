@@ -10,7 +10,7 @@ Given(/^I go to "([^"]*)" soundcloud page$/) do |user|
 end
 
 Given(/^I play a song$/) do
-  click_button ('Play', match: :first)
+  find('Play', match: :first).click
 end
 
 Then(/^I wait$/) do
