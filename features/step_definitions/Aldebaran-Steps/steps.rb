@@ -11,9 +11,11 @@ end
 
 Given(/^I play a song$/) do
   click_on 'Play'
-  sleep(10)
 end
 
+Then(/^I wait$/) do
+  sleep(10)
+end  
 
 
 
