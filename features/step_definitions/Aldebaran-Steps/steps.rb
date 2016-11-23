@@ -20,6 +20,7 @@ end
 
 Given(/^I play track "([^"]*)"$/) do |url|
 visit ('url' + '#t=0:01')
+end
 
 
 
