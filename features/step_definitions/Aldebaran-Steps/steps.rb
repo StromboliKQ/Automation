@@ -5,7 +5,7 @@ require 'json-schema'
 
 #### SoundCloud ####
 
-Given(/^I play the track "([^"]*)"$/) do |url|
+Given(/^I play the track "([^"]*)"$/) do |arg1|
   visit ('https://soundcloud.com/konquestnow/verseborn-act-like-you-know#t=0:01')
 end
 
