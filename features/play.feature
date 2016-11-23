@@ -9,6 +9,9 @@ Feature: Play Track
       Then I wait
       
       Examples:
-      | url                                                                     |
-      | "https://soundcloud.com/konquestnow/verseborn-act-like-you-know#t=0:01" |
-      | "https://soundcloud.com/konquestnow/totem-freestyle#t=0:01"             |
+      | url                                                                                                       |
+      | "https://soundcloud.com/konquestnow/verseborn-act-like-you-know#t=0:01"                                   |
+      | "https://soundcloud.com/konquestnow/konquest-verseborn-x-wreck-the-rebelft-smooth-da-truth-elite#t=0:01"  |
+      | "https://soundcloud.com/konquestnow/make-it-home#t=0:01"                                                  |
+      | "https://soundcloud.com/konquestnow/shift#t=0:01"                                                         |
+      | "https://soundcloud.com/konquestnow/policy#t=0:01"                                                        |
