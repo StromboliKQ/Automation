@@ -5,7 +5,7 @@ require 'json-schema'
 
 #### SoundCloud ####
 
-Given(/^I play the track "([^"]*)"$/) do |table|
+Given(/^I play the track <url>$/) do |table|
   #visit ('url')
 end
 
