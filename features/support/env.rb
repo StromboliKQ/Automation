@@ -1,19 +1,19 @@
 puts "Welcome to the TEST SUITE!"
-require 'httparty'
+#require 'httparty'
 require 'capybara'
 require 'capybara/cucumber'
 require 'capybara-screenshot/cucumber'
-require 'capybara/rspec'
-require 'capybara-screenshot/rspec'
+#require 'capybara/rspec'
+#require 'capybara-screenshot/rspec'
 require 'selenium-webdriver'
-require 'farmer/step_definitions'
-require 'json_spec/cucumber'
-require 'chronic'
-require 'cucumber-api'
-require 'cucumber/api_steps'
+#require 'farmer/step_definitions'
+#require 'json_spec/cucumber'
+#require 'chronic'
+#require 'cucumber-api'
+#require 'cucumber/api_steps'
 #require 'mime-types', '~> 1.16'
-require 'unirest'
-require 'rack/client'
+#require 'unirest'
+#require 'rack/client'
 
 module CapybaraApp
   def app; Capybara.app; end
@@ -29,30 +29,30 @@ def setup
   @driver = Selenium::WebDriver.for :firefox
 end
 
-Time.now   #=> Sun Aug 27 23:18:25 PDT 2006
+#Time.now   #=> Sun Aug 27 23:18:25 PDT 2006
 
-Chronic.parse('tomorrow')
+#Chronic.parse('tomorrow')
   #=> Mon Aug 28 12:00:00 PDT 2006
 
-Chronic.parse('monday', :context => :past)
+#Chronic.parse('monday', :context => :past)
   #=> Mon Aug 21 12:00:00 PDT 2006
 
-Chronic.parse('this tuesday 5:00')
+#Chronic.parse('this tuesday 5:00')
   #=> Tue Aug 29 17:00:00 PDT 2006
 
-Chronic.parse('this tuesday 5:00', :ambiguous_time_range => :none)
+#Chronic.parse('this tuesday 5:00', :ambiguous_time_range => :none)
   #=> Tue Aug 29 05:00:00 PDT 2006
 
-Chronic.parse('may 27th', :now => Time.local(2000, 1, 1))
+#Chronic.parse('may 27th', :now => Time.local(2000, 1, 1))
   #=> Sat May 27 12:00:00 PDT 2000
 
-Chronic.parse('may 27th', :guess => false)
+#Chronic.parse('may 27th', :guess => false)
   #=> Sun May 27 00:00:00 PDT 2007..Mon May 28 00:00:00 PDT 2007
 
-Chronic.parse('6/4/2012', :endian_precedence => :little)
+#Chronic.parse('6/4/2012', :endian_precedence => :little)
   #=> Fri Apr 06 00:00:00 PDT 2012
 
-Chronic.parse('INVALID DATE')
+#Chronic.parse('INVALID DATE')
   #=> nil
 #require 'headless'
 
