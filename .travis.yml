@@ -1,3 +1,6 @@
+addons:
+  firefox: "49.0"
+
 before_script:
   - "gem install cucumber"
   - export DISPLAY=:99.0
