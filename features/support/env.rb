@@ -21,9 +21,9 @@ end
 World(CapybaraApp)
 World(Rack::Test::Methods)
 
-client = Rack::Client.new('http://localhost:8080') do
-  run Rack::Client::Handler::NetHTTP
-end
+#client = Rack::Client.new('http://localhost:8080') do
+ # run Rack::Client::Handler::NetHTTP
+#end
 
 def setup
   @driver = Selenium::WebDriver.for :firefox
