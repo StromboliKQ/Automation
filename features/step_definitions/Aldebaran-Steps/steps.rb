@@ -1,6 +1,6 @@
-require 'cucumber-api/response'
-require 'rest-client'
-require 'json-schema'
+#require 'cucumber-api/response'
+#require 'rest-client'
+#require 'json-schema'
 
 
 #### SoundCloud ###
