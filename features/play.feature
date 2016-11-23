@@ -7,3 +7,19 @@ Feature: Play track
     Scenario: Direct Play
       Given I play the track "https://soundcloud.com/konquestnow/verseborn-act-like-you-know"
       Then I wait
+
+    Scenario: Direct Play
+      Given I play the track "https://soundcloud.com/konquestnow/verseborn-act-like-you-know"
+      Then I wait
+
+    Scenario: Direct Play
+      Given I play the track "https://soundcloud.com/konquestnow/verseborn-act-like-you-know"
+      Then I wait
+
+    Scenario: Direct Play
+      Given I play the track "https://soundcloud.com/konquestnow/verseborn-act-like-you-know"
+      Then I wait
+      
+    Scenario: Direct Play
+      Given I play the track "https://soundcloud.com/konquestnow/verseborn-act-like-you-know"
+      Then I wait
