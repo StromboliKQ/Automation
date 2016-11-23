@@ -2,6 +2,16 @@ require 'cucumber'
 require 'cucumber/rake/task'
 
 
+Cucumber::Rake::Task.new(:play) do |t|
+ # t.profile = ‘ci’
+  t.cucumber_opts = "features/play.feature
+  --format pretty
+  --no-source
+  --format json
+  -o cucumber.json
+  --guess"
+end
+
 Cucumber::Rake::Task.new(:features) do |t|
  # t.profile = ‘ci’
   t.cucumber_opts = "features/*
@@ -44,6 +54,7 @@ Cucumber::Rake::Task.new(:post) do |t|
 end
 
 task :default => :features
+task :default => :play
 #task :default => :quick
 #task :default => :files
 #task :default => :post
