@@ -5,6 +5,12 @@ require 'json-schema'
 
 #### SoundCloud ####
 
+Given(/^I play the track "([^"]*)"$/) do |url|
+  visit ('url' + '#t=0:01')
+end
+
+###
+
 Given(/^I go to "([^"]*)" soundcloud page$/) do |user|
   visit ('https://soundcloud.com/' + user)
   expect(page).to have_text "KonQuest Now"
@@ -18,9 +24,7 @@ Then(/^I wait$/) do
   sleep(240)
 end  
 
-Given(/^I play track "([^"]*)"$/) do |url|
-visit ('url' + '#t=0:01')
-end
+
 
 
 
