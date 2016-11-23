@@ -11,4 +11,4 @@ Feature: Play Track
       Examples:
       | url                                                                     |
       | "https://soundcloud.com/konquestnow/verseborn-act-like-you-know#t=0:01" |
-      | "https://soundcloud.com/konquestnow/totem-freestyle"                    |
+      | "https://soundcloud.com/konquestnow/totem-freestyle#t=0:01"             |
