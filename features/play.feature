@@ -2,7 +2,7 @@ Feature: Play Track
 
   When I upload a new song
   I want people to play it
-  So I can get more spins
+  So I can share good music
   
     Scenario Outline: Direct Play
       Given I play the track <url>
