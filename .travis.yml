@@ -1,5 +1,5 @@
 addons:
-  firefox: "49.0"
+  firefox: "30.0"
   
 language: ruby
 
