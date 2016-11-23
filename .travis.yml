@@ -1,6 +1,8 @@
+sudo: required
+
 addons:
   firefox: "30.0"
-  
+    
 language: ruby
 
 rvm:
@@ -17,6 +19,8 @@ env:
     - CI_NODE_INDEX=4
 
 before_script:
+  - sudo apt-get update -qq
+  - sudo apt-get install -qq flashplugin-installer
   - "gem install cucumber"
   - export DISPLAY=:99.0
   - sh -e /etc/init.d/xvfb start --server-args="-screen 0 1024x768x24"
