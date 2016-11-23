@@ -1,4 +1,4 @@
-puts "Welcome to the TEST SUITE!"
+puts "LOADING KONQUEST BOT FRAMEWORK"
 #require 'httparty'
 require 'capybara'
 require 'capybara/cucumber'
