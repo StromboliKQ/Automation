@@ -3,7 +3,7 @@ require 'rest-client'
 require 'json-schema'
 
 
-#### SoundCloud ####
+#### SoundCloud ###
 
 Given(/^I play the track "([^"]*)"$/) do |url|
   visit ('url')
