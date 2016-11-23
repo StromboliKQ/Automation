@@ -9,7 +9,7 @@ Given(/^I play the track "([^"]*)"$/) do |url|
   visit ('url')
 end
 
-###
+####
 
 Given(/^I go to "([^"]*)" soundcloud page$/) do |user|
   visit ('https://soundcloud.com/' + user)
