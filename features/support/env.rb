@@ -1,4 +1,6 @@
-puts "LOADING KNAF(KONQUEST NOW AUTOMATION FRAMEWORK)"
+puts "----------------------------------------------------"
+puts "| LOADING KNAF(KONQUEST NOW AUTOMATION FRAMEWORK)  |"
+puts "----------------------------------------------------"
 #require 'httparty'
 require 'capybara'
 require 'capybara/cucumber'
@@ -128,3 +130,6 @@ end
 #    headless.destroy
 #  end
 #end
+puts "----------------"
+puts "| KNAF LOADED! |"
+puts "----------------"
