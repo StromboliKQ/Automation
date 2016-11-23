@@ -4,7 +4,7 @@ Feature: Play Track
   I want people to play it
   So I can get more spins
   
-    Scenario: Direct Play
+    Scenario Outline: Direct Play
       Given I play the track <url>
       Then I wait
       
