@@ -15,7 +15,6 @@ GEM
       launchy
     childprocess (0.5.9)
       ffi (~> 1.0, >= 1.0.11)
-    chronic (0.10.2)
     cucumber (2.4.0)
       builder (>= 2.1.2)
       cucumber-core (~> 1.5.0)
@@ -24,93 +23,31 @@ GEM
       gherkin (~> 4.0)
       multi_json (>= 1.7.5, < 2.0)
       multi_test (>= 0.1.2)
-    cucumber-api (0.3)
-      cucumber (~> 2.0)
-      json-schema (~> 2.5)
-      jsonpath (~> 0.5)
-      rest-client (~> 1.8)
-    cucumber-api-steps (0.13)
-      cucumber (>= 1.2.1)
-      jsonpath (>= 0.1.2)
-      rspec (>= 2.12.0)
     cucumber-core (1.5.0)
       gherkin (~> 4.0)
-    cucumber-farmer (1.0.3)
-      mattscilipoti-rdialog (~> 0.6.1)
     cucumber-wire (0.0.1)
     diff-lcs (1.2.5)
-    domain_name (0.5.20160615)
-      unf (>= 0.0.5, < 1.0.0)
     ffi (1.9.10)
     gherkin (4.0.0)
-    http-cookie (1.0.2)
-      domain_name (~> 0.5)
-    httparty (0.11.0)
-      multi_json (~> 1.0)
-      multi_xml (>= 0.5.2)
-    json (1.8.3)
-    json-schema (2.6.2)
-      addressable (~> 2.3.8)
-    json_spec (1.1.4)
-      multi_json (~> 1.0)
-      rspec (>= 2.0, < 4.0)
-    jsonpath (0.5.8)
-      multi_json
-    knapsack (1.11.1)
-      rake
-      timecop (>= 0.1.0)
     launchy (2.4.3)
       addressable (~> 2.3)
-    mattscilipoti-rdialog (0.6.1)
-    metaclass (0.0.4)
     mime-types (2.99.2)
     mini_portile2 (2.1.0)
-    mocha (1.1.0)
-      metaclass (~> 0.0.1)
     multi_json (1.12.1)
     multi_test (0.1.2)
-    multi_xml (0.5.5)
-    netrc (0.11.0)
     nokogiri (1.6.8)
       mini_portile2 (~> 2.1.0)
       pkg-config (~> 1.1.7)
     pkg-config (1.1.7)
     rack (1.6.4)
-    rack-client (0.4.2)
-      rack (>= 1.0.0)
     rack-test (0.6.3)
       rack (>= 1.0)
     rake (11.2.2)
-    rest-client (1.8.0)
-      http-cookie (>= 1.0.2, < 2.0)
-      mime-types (>= 1.16, < 3.0)
-      netrc (~> 0.7)
-    rspec (3.4.0)
-      rspec-core (~> 3.4.0)
-      rspec-expectations (~> 3.4.0)
-      rspec-mocks (~> 3.4.0)
-    rspec-core (3.4.4)
-      rspec-support (~> 3.4.0)
-    rspec-expectations (3.4.0)
-      diff-lcs (>= 1.2.0, < 2.0)
-      rspec-support (~> 3.4.0)
-    rspec-mocks (3.4.1)
-      diff-lcs (>= 1.2.0, < 2.0)
-      rspec-support (~> 3.4.0)
-    rspec-support (3.4.1)
     rubyzip (1.2.0)
     selenium-webdriver (2.53.4)
       childprocess (~> 0.5)
       rubyzip (~> 1.0)
       websocket (~> 1.0)
-    timecop (0.8.1)
-    unf (0.1.4)
-      unf_ext
-    unf_ext (0.0.7.2)
-    unirest (1.0.8)
-      addressable
-      json
-      rest-client
     websocket (1.2.3)
     xpath (2.0.0)
       nokogiri (~> 1.3)
@@ -121,22 +58,9 @@ PLATFORMS
 DEPENDENCIES
   capybara
   capybara-screenshot
-  chronic
   cucumber
-  cucumber-api
-  cucumber-api-steps
-  cucumber-farmer
-  httparty
-  json_spec
-  knapsack
-  mocha
-  rack-client
   rake
-  rest-client
-  rspec
   selenium-webdriver
-  timecop
-  unirest
 
 BUNDLED WITH
    1.12.5
