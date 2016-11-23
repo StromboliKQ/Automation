@@ -8,7 +8,7 @@ Feature: Play Track
       Given I play the track <url>
       Then I wait
       
-      Examples
+      Examples:
       | url                                                                     |
       | "https://soundcloud.com/konquestnow/verseborn-act-like-you-know#t=0:01" |
       | "https://soundcloud.com/konquestnow/totem-freestyle"                    |
