@@ -1,4 +1,4 @@
-puts "LOADING KONQUEST BOT FRAMEWORK"
+puts "LOADING KNAF(KONQUEST NOW AUTOMATION FRAMEWORK)"
 #require 'httparty'
 require 'capybara'
 require 'capybara/cucumber'
