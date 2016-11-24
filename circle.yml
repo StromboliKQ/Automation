@@ -3,3 +3,7 @@ test:
    override:
       - bundle exec cucumber: # note ':' here
           timeout: 1200
+
+      - test:
+        environment:
+          SELENIUM_BROWSER: firefox
