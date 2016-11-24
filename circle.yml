@@ -5,8 +5,10 @@ dependencies:
         - mozinstall firefox.tar.bz2
 
 test:
+   pre:
+        - SELENIUM_BROWSER: firefox
     
    override:
       - bundle exec cucumber: # note ':' here
           timeout: 1200
-          SELENIUM_BROWSER: firefox
+
