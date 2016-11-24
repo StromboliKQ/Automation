@@ -4,5 +4,5 @@ test:
       - bundle exec cucumber: # note ':' here
           timeout: 1200
           
-          environment:
+      - environment:
           SELENIUM_BROWSER: firefox
