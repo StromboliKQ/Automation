@@ -24,5 +24,5 @@ end
 
 # => Wait for the song to play
 Then(/^I wait$/) do
-  sleep(40)
+  sleep(30)
 end  
