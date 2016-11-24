@@ -2,4 +2,4 @@ test:
     
     override:
     
-            timeout: 1200
+            - timeout: 1200
