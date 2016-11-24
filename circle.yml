@@ -5,9 +5,6 @@ dependencies:
         - mozinstall firefox.tar.bz2
 
 test:
-   pre:
-        - environment:
-            SELENIUM_BROWSER: firefox
     
    override:
       - bundle exec cucumber: # note ':' here
