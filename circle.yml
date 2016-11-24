@@ -1,5 +1,5 @@
 test:
     
-    commands:
+    override:
             - /bin/bash build_scripts/deploy_to_eb.sh:
                 timeout: 1200
