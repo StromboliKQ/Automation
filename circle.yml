@@ -6,7 +6,8 @@ dependencies:
 
 test:
    pre:
-        - SELENIUM_BROWSER: firefox
+        - environment:
+            SELENIUM_BROWSER: firefox
     
    override:
       - bundle exec cucumber: # note ':' here
