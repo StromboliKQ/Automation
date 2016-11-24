@@ -1,6 +1,11 @@
+dependencies:
+    pre:
+        - pip install mozdownload mozinstall
+        - mozdownload --version latest --destination firefox.tar.bz2
+        - mozinstall firefox.tar.bz2
+
 test:
     
    override:
       - bundle exec cucumber: # note ':' here
           timeout: 1200
-          SELENIUM_BROWSER: firefox
