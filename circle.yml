@@ -1,5 +1,5 @@
 test:
     
-    override:
-    
-            - timeout: 1200
+   override:
+      - bundle exec cucumber: # note ':' here
+          timeout: 1200
