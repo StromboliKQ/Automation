@@ -12,6 +12,6 @@ test:
       - bundle exec cucumber: # note ':' here
           timeout: 1200
           parallel: true
-            files:
-                - features/step_definitions/Aldebaran-Steps/steps.rb
+          files:
+            - features/step_definitions/Aldebaran-Steps/steps.rb
 
