@@ -9,20 +9,17 @@
 
 # => Navigate directly to the track
 Given(/^I play the track "([^"]*)"$/) do |url|
-chrome_capabilities = Selenium::WebDriver::Remote::Capabilities.chrome()
-firefox_capabilities = Selenium::WebDriver::Remote::Capabilities.firefox()
+  chrome_capabilities = Selenium::WebDriver::Remote::Capabilities.chrome()
+  firefox_capabilities = Selenium::WebDriver::Remote::Capabilities.firefox()
 
-chrome = Selenium::WebDriver.for(:remote, :url => 'http://localhost:4444/wd/hub', :desired_capabilities => chrome_capabilities)
-firefox = Selenium::WebDriver.for(:remote, :url => 'http://localhost:4444/wd/hub', :desired_capabilities => firefox_capabilities)
+  chrome = Selenium::WebDriver.for(:remote, :url => 'http://localhost:4444/wd/hub', :desired_capabilities => chrome_capabilities)
+  firefox = Selenium::WebDriver.for(:remote, :url => 'http://localhost:4444/wd/hub', :desired_capabilities => firefox_capabilities)
 
-chrome.get(url)
-puts chrome.title
+  chrome.get(url)
+  puts chrome.title
 
-firefox.get(url)
-puts firefox.title
-
-chrome.quit
-firefox.quit
+  firefox.get(url)
+  puts firefox.title
 end
 
 # => Navigate to User Profile page
@@ -40,4 +37,6 @@ end
 Then(/^I wait$/) do
   wait = Selenium::WebDriver::Wait.new(:timeout => 40)
   #sleep(40)
+  chrome.quit
+  firefox.quit
 end   
