@@ -38,6 +38,7 @@ Then(/^I wait$/) do
   firefox = Selenium::WebDriver.for(:remote, :url => 'http://localhost:4444/wd/hub', :desired_capabilities => firefox_capabilities)
   
   wait = Selenium::WebDriver::Wait.new(:timeout => 40)
+  thread.sleep(4000)
   #sleep(40)
   
   chrome.quit
