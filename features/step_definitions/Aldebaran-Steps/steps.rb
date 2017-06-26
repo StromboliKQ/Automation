@@ -38,5 +38,6 @@ end
 
 # => Wait for the song to play
 Then(/^I wait$/) do
-  sleep(40)
+  wait = Selenium::WebDriver::Wait.new(:timeout => 40)
+  #sleep(40)
 end   
