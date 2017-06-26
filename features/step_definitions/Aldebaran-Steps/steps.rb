@@ -9,11 +9,20 @@
 
 # => Navigate directly to the track
 Given(/^I play the track "([^"]*)"$/) do |url|
-  chrome.get(url)
-  puts chrome.title
+chrome_capabilities = Selenium::WebDriver::Remote::Capabilities.chrome()
+firefox_capabilities = Selenium::WebDriver::Remote::Capabilities.firefox()
 
-  firefox.get(url)
-  puts firefox.title
+chrome = Selenium::WebDriver.for(:remote, :url => 'http://localhost:4444/wd/hub', :desired_capabilities => chrome_capabilities)
+firefox = Selenium::WebDriver.for(:remote, :url => 'http://localhost:4444/wd/hub', :desired_capabilities => firefox_capabilities)
+
+chrome.get(url)
+puts chrome.title
+
+firefox.get(url)
+puts firefox.title
+
+chrome.quit
+firefox.quit
 end
 
 # => Navigate to User Profile page
