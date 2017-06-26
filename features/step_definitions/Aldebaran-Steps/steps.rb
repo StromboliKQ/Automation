@@ -14,8 +14,11 @@ Given(/^I play the track "([^"]*)"$/) do |url|
   firefox = Selenium::WebDriver.for(:remote, :url => 'http://localhost:4444/wd/hub', :desired_capabilities => firefox_capabilities)
 
   chrome.get(url)
+  chrome.manage.timeouts.implicit_wait = 40
   puts chrome.title
+  
   firefox.get(url)
+  firefox.manage.timeouts.implicit_wait = 40
   puts firefox.title
 end
 
@@ -38,8 +41,6 @@ Then(/^I wait$/) do
   firefox = Selenium::WebDriver.for(:remote, :url => 'http://localhost:4444/wd/hub', :desired_capabilities => firefox_capabilities)
   
   wait = Selenium::WebDriver::Wait.new(:timeout => 40)
-  thread.sleep(4000)
-  #sleep(40)
   
   chrome.quit
   firefox.quit
