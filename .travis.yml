@@ -46,9 +46,7 @@ before_script:
 script: "bundle exec rake play"
 
 after_script:
-  - docker-compose logs selenium-firefox
-  - docker-compose logs selenium-chrome
-  - docker-compose logs --follow selenium-hub
+  - docker-compose logs
 
 #script:
 #- "bundle exec rake knapsack:features"
