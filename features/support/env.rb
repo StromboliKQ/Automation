@@ -1,5 +1,3 @@
-World(CapybaraApp)
-World(Rack::Test::Methods)
 puts "----------------------------------------------"
 puts "| STARTING KONQUEST NOW AUTOMATION FRAMEWORK |"
 puts "----------------------------------------------"
@@ -47,6 +45,8 @@ end
 module CapybaraApp
   def app; Capybara.app; end
 end
+World(CapybaraApp)
+World(Rack::Test::Methods)
 
 def last_json
   page.source
