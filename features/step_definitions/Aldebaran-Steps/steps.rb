@@ -7,17 +7,17 @@
 #### Example Code: RUBY ####
 
 def setup
-chrome = Selenium::WebDriver
-firefox = Selenium::WebDriver
+@chrome = Selenium::WebDriver
+@firefox = Selenium::WebDriver
 end
 
 # => Navigate directly to the track
 Given(/^I play the track "([^"]*)"$/) do |url|
-  chrome.get(url)
-  puts chrome.title
+  @chrome.get(url)
+  puts @chrome.title
 
-  firefox.get(url)
-  puts firefox.title
+  @firefox.get(url)
+  puts @firefox.title
 end
 
 # => Navigate to User Profile page
