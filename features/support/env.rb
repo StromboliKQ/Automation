@@ -28,7 +28,13 @@ World(Rack::Test::Methods)
 #end
 
 def setup
-  @driver = Selenium::WebDriver.for :firefox
+  #@driver = Selenium::WebDriver.for :firefox
+   @driver = Selenium::WebDriver.for(
+    :remote,
+    url: 'http://127.0.0.1:4444/wd/hub',
+    desired_capabilities: :firefox)
+
+end
 end
 
 #Time.now   #=> Sun Aug 27 23:18:25 PDT 2006
