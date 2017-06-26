@@ -47,4 +47,3 @@ script: "bundle exec rake play"
 #script:
 #- "bundle exec rake knapsack:features"
 #- "KNAPSACK_GENERATE_REPORT=true bundle exec rake features"
-Contact GitHub API Training Shop Blog About
