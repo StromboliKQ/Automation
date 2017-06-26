@@ -41,7 +41,7 @@ before_script:
   - export DISPLAY=:99.0
   - sh -e /etc/init.d/xvfb start --server-args="-screen 0 1024x768x24"
 
-script: "bundle exec rake play2"
+script: "bundle exec rake play"
 
 
 #script:
