@@ -1,3 +1,5 @@
+World(CapybaraApp)
+World(Rack::Test::Methods)
 puts "----------------------------------------------"
 puts "| STARTING KONQUEST NOW AUTOMATION FRAMEWORK |"
 puts "----------------------------------------------"
@@ -29,22 +31,22 @@ require 'capybara/cucumber'
 require 'capybara-screenshot/cucumber'
 require 'selenium-webdriver'
 
-chrome_capabilities = Selenium::WebDriver::Remote::Capabilities.chrome()
-firefox_capabilities = Selenium::WebDriver::Remote::Capabilities.firefox()
-chrome = Selenium::WebDriver.for(:remote, :url => 'http://127.0.0.1:4444/wd/hub', :desired_capabilities => chrome_capabilities)
-firefox = Selenium::WebDriver.for(:remote, :url => 'http://127.0.0.1:4444/wd/hub', :desired_capabilities => firefox_capabilities)
+def setup
+    chrome_capabilities = Selenium::WebDriver::Remote::Capabilities.chrome()
+    firefox_capabilities = Selenium::WebDriver::Remote::Capabilities.firefox()
+    chrome = Selenium::WebDriver.for(:remote, :url => 'http://127.0.0.1:4444/wd/hub', :desired_capabilities => chrome_capabilities)
+    firefox = Selenium::WebDriver.for(:remote, :url => 'http://127.0.0.1:4444/wd/hub', :desired_capabilities => firefox_capabilities)
 
-Capybara.default_driver = :selenium
-Capybara.default_max_wait_time = 600
-Capybara.run_server = false
-Capybara.app_host = "http://www.google.com"
-Capybara.save_path = "features/screen-shots"
-
+  Capybara.default_driver = :selenium
+  Capybara.default_max_wait_time = 600
+  Capybara.run_server = false
+  Capybara.app_host = "http://www.google.com"
+  Capybara.save_path = "features/screen-shots"
+end
+  
 module CapybaraApp
   def app; Capybara.app; end
 end
-World(CapybaraApp)
-World(Rack::Test::Methods)
 
 def last_json
   page.source
