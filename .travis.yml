@@ -26,7 +26,8 @@ before_install:
   - sudo apt-get update
   - sudo apt-get install -o Dpkg::Options::="--force-confold" --force-yes -y docker-ce
   - docker-compose --version
-  - docker-compose up
+  - docker-compose up -d
+  - docker-compose ps
 #  - sudo rm /usr/local/bin/docker-compose
 #  - curl -L https://github.com/docker/compose/releases/download/${DOCKER_COMPOSE_VERSION}/docker-compose-`uname -s`-`uname -m` > docker-compose
 #  - chmod +x docker-compose
@@ -46,3 +47,4 @@ script: "bundle exec rake play"
 #script:
 #- "bundle exec rake knapsack:features"
 #- "KNAPSACK_GENERATE_REPORT=true bundle exec rake features"
+Contact GitHub API Training Shop Blog About
