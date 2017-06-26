@@ -28,7 +28,8 @@ before_install:
   - docker-compose --version
   - docker-compose up -d
   - docker-compose ps
-  - docker-compose scale selenium-firefox=10
+  - docker-compose scale selenium-firefox=15
+  - docker-compose scale selenium-chrome=15
 #  - sudo rm /usr/local/bin/docker-compose
 #  - curl -L https://github.com/docker/compose/releases/download/${DOCKER_COMPOSE_VERSION}/docker-compose-`uname -s`-`uname -m` > docker-compose
 #  - chmod +x docker-compose
@@ -47,7 +48,7 @@ script: "bundle exec rake play"
 after_script:
   - docker-compose logs selenium-firefox
   - docker-compose logs selenium-chrome
-  - docker-compose logs selenium-hub --follow
+  - docker-compose logs --follow selenium-hub
 
 #script:
 #- "bundle exec rake knapsack:features"
