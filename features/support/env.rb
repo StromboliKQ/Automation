@@ -35,7 +35,6 @@ def setup
     desired_capabilities: :firefox)
 
 end
-end
 
 #Time.now   #=> Sun Aug 27 23:18:25 PDT 2006
 
