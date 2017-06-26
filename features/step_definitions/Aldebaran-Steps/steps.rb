@@ -8,7 +8,11 @@
 
 # => Navigate directly to the track
 Given(/^I play the track "([^"]*)"$/) do |url|
-  visit (url)
+  chrome.get(url)
+  puts chrome.title
+
+  firefox.get(url)
+  puts firefox.title
 end
 
 # => Navigate to User Profile page
